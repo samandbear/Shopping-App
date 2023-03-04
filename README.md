@@ -1,7 +1,7 @@
 # Shopping-App
 
 User (Buyer)
-The users are able to shop for different products from Super Duper Mart™.
+The users are able to shop for different products.
 1. Registration
 a. Before being able to purchase products, a user has to first register and login.
 i. Your application should prevent registration using the same username
@@ -42,8 +42,7 @@ i. When viewing the watchlist, products which are out of stock will not be
 shown to the user.
 
 Admin (Seller)
-The seller, Super Duper Mart™, is able to list different products to sell. There is one and ONLY
-one seller, thus no need to keep user_id foreign keys in the product table.
+The seller is able to list different products to sell.
 1. Home Page
 a. The seller should be able to view a dashboard, consisting of the following:
 i. Order information, with details of order placed time, users who placed
