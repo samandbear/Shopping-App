@@ -7,7 +7,6 @@ a. Before being able to purchase products, a user has to first register and logi
 i. Your application should prevent registration using the same username
 and email.
 ii. Only username, email and password are required to register an account.
-iii. Password should be encrypted (Bonus)
 2. Login
 a. If the user has entered the correct credentials, they may proceed to the
 corresponding page based on their authorities.
