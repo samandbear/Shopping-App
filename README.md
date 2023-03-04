@@ -40,17 +40,7 @@ a. The user can add/remove products to/from their watchlist.
 b. The user can view all in stock products within their watchlist.
 i. When viewing the watchlist, products which are out of stock will not be
 shown to the user.
-6. Summary
-a. The user should be able to view all their orders.
-i. Note that the wholesale_price and retail_price of a product can be
-adjusted by the seller, implement something to prevent the adjustments
-from affecting previous orders.
-b. The user can then click and look into any one specific order created by them,
-completed with the items included in that order.
-c. The user should be able to view their top 3 most frequently purchased items.
-(excluding canceled order, use item ID as tie breaker)
-d. The user can also view their top 3 most recently purchased items. (excluding
-canceled order, use item id as tie breaker)
+
 Admin (Seller)
 The seller, Super Duper Mart™, is able to list different products to sell. There is one and ONLY
 one seller, thus no need to keep user_id foreign keys in the product table.
@@ -80,19 +70,4 @@ the product is sold out locally, by updating the order status to “Canceled”.
 the item’s stock should be incremented accordingly to offset the auto-deduction
 that took place when the order is first placed. However, a “Canceled” order
 cannot be completed, nor can a “Completed” order be canceled.
-5. Summary
-a. The seller should be able to see all orders.
-i. A page should only have 5 orders (Bonus)
-b. The seller can click and see information regarding any single order, completed
-with the items involved in the order.
-c. The seller can see which product brings the most profit.
-i. The profit is calculated as (retail price - wholesale price).
-ii. Note: This should address situations where the seller alters either the
-wholesale_price or retail_price, causing a discrepancy when comparing
-between the past orders and the current updated product details.
-d. The seller can see which 3 products are the most popular/sold (excluding
-canceled and ongoing order).
-e. The seller can also see the amount of total items sold successfully (excluding
-canceled and ongoing order).
-f. Show the top 3 buyers who spent the most (excluding canceled and ongoing
-order, use first name as a tie breaker).
+
